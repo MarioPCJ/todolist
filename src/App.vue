@@ -1,32 +1,24 @@
+
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+ <router-view/>
+
+  <b-input-group class="mb-2">
+    <b-input-group-prepend is-text>
+      <b-form-checkbox class="mr-n2">
+        <span class="sr-only">Checkbox for following text input</span>
+      </b-form-checkbox>
+    </b-input-group-prepend>
+    <b-form-input aria-label="Text input with checkbox"></b-form-input>
+  </b-input-group>
+
   </div>
 </template>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.mb-2{
+  position: absolute;
+margin-top: -60px;
+z-index:9999;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
